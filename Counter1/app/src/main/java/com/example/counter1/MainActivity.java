@@ -25,4 +25,14 @@ public class MainActivity extends AppCompatActivity {
         TextView value = (TextView) findViewById(R.id.textView);
         value.setText(R.string.initial_value);
     }
+
+    public void button3_Click(View view) {
+        int counter;
+        TextView value = (TextView) findViewById(R.id.textView);
+        counter = Integer.parseInt(value.getText().toString());
+        if(counter > 0){
+            counter--;
+        }
+        value.setText(Integer.toString(counter));
+    }
 }
